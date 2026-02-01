@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Photography Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> KYAR Nature Photography</h1>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <a href="#gallery">Gallery</a>
+    <a href="#about" id="aboutLink">About</a>
+</nav>
+
+<!-- GALLERY -->
+<section id="gallery" class="gallery">
+    <img src="image/230.jpg" alt="">
+    <img src="image/236.jpg" alt="">
+    <img src="image/239.jpg" alt="">
+    <img src="image/242.jpg" alt="">
+
+    <!-- hidden images -->
+    <img src="image/244.jpg" class="hidden" alt="">
+    <img src="image/246.jpg" class="hidden" alt="">
+</section>
+
+<button id="seeAllBtn" class="see-all">See All</button>
+<!-- ABOUT OVERLAY -->
+<div id="aboutOverlay" class="about-overlay hidden">
+    <div class="about-content">
+    <button id="closeAbout" class="close-btn">&times;</button>
+    <h2>About Me</h2>
+    <p>
+        I am a photographer focusing on minimal and natural moments.
+        This portfolio showcases my selected works.
+    </p>
+    </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox hidden">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
